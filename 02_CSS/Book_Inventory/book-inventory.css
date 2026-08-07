@@ -1,0 +1,65 @@
+h1{
+  margin-left: 10vw;
+}
+table{
+  width: 80vw;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+}
+thead  tr{
+  height: 30px;
+  font-size: 18px;
+  background-image: linear-gradient(hsl(120, 100%, 85%, 0.6), hsl(205, 100%, 65%, 0.6));
+  border: none;
+}
+tr{
+  height: 40px;
+}
+tr[class="read"], tr[class="read2"]{
+  background-image: linear-gradient(hsl(120, 100%, 85%, 0.6), hsl(120, 100%, 65%,0.6));
+}
+ span[class="status"], span[class="status2"], span[class="status3"] {
+  border: 0.1em solid hsl(120, 75%, 45%);
+  padding: 0.25em 1.9em;
+  border-radius: 1em;
+  background-image: linear-gradient(hsl(120, 75%, 75%), hsl(120, 75%, 50%));
+  font-size: 1.1em;
+}
+ span[class="rate-three"] {
+  height: 1.85em;
+  width: 7em;
+  padding: 0.3em;
+}
+span{
+  display: inline-block;
+}
+span[class="circle"], span[class="circle2"]{
+  margin-top: 0.4em;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 0.1em solid rgb(201, 198, 198);
+  background-image: linear-gradient(hsl(50, 100%, 70%), hsl(50, 100%, 50%));
+}
+tr[class="read2"] {
+  background-image: linear-gradient(hsl(120, 20%, 95%, 0.6), hsl(120, 20%, 75%, 0.6));
+}
+span[class="status2"]{
+  border: 0.1em solid hsl(5, 100%, 45%);
+    background-image: linear-gradient(hsl(5, 100%, 75%), hsl(5, 100%, 50%));
+    padding: 0.25em 1.3em;
+}
+span[class="circle2"]{
+  border: 0.1em solid rgb(201, 198, 198);
+  background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 100%));
+}
+tr[class="read3"]{
+  background-image: linear-gradient(hsl(40, 100%, 85%, 0.60), hsl(40, 100%, 65%, 0.6));
+}
+span[class="status3"] {
+  padding: 0.25em 0.8em;
+  border: 0.1em solid hsl(40, 90%, 40%);
+  background-image: linear-gradient(hsl(40, 90%, 75%), hsl(40, 90%, 50%));
+}
