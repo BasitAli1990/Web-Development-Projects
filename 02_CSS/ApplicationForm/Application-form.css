@@ -1,0 +1,77 @@
+body{
+  font-size: 15px;
+}
+.form-section{
+  width: 60vw;
+  height: 90vh;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px 3px lightgray;
+  padding: 30px 20px 20px 20px;
+}
+h1{
+  text-align: center;
+}
+.form-elements{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.text-box-label {
+  display: block;
+  font-weight: bold;
+  line-height: 25px;
+  font-size: 18px;
+}
+.text-box{
+  padding: 8px 10px;
+  width: 100%;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid green;
+}
+.text-box:invalid, select:invalid, textarea:invalid{
+  border: 1px solid red;
+}
+fieldset{
+  width: 99%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+select{
+  width: 105%;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid green;
+}
+#availability{
+  width: 20px;
+  transform: scale(2.0);
+  accent-color: green;
+  margin-right: 10px;
+}
+textarea{
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 10px;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+.submit-btn{
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 105%;
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+}
