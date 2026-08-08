@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leap-Year-Calculator</title>
+</head>
+<body>
+  <script>
+    
+    function isLeapYear(year){  
+      if(year % 100 === 0) 
+        {
+          if(year % 400 === 0){
+                  console.log(year + " is a Leap Year")
+              }
+        }
+        else if(year % 4 === 0){
+            console.log(year + " is a Leap Year");
+        }
+        else{
+          console.log(year + " is not a leap year");
+        }
+    }
+
+    let year = prompt("Enter Year");
+
+    isLeapYear(year);
+  </script>
+</body>
+</html>
