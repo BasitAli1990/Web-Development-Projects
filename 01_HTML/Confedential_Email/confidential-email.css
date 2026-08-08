@@ -1,0 +1,41 @@
+body {
+  display: block;
+  margin: 8px;
+}
+.email-card {
+  background-color: seashell;
+  margin: 50px auto;
+  padding: 50px;
+  width: 500px;
+  border: 2px solid black;
+  box-shadow: 5px 3px 3px gray;
+  box-sizing: border-box;
+}
+.top-secret {
+  font-size: 20px;
+  color: red;
+  box-sizing: border-box;
+  border: 5px solid red;
+  padding: 10px;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 200px;
+  transform: rotate(20deg);
+}
+.confidential {
+  font-size: 25px;
+  color: red;
+  box-sizing: border-box;
+  border: 5px solid red;
+  padding: 10px;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 110px;
+  transform: rotate(-20deg);
+}
+.blur{
+  filter: blur(3px);
+}
+p{
+  font-size: 16px;
+}
