@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz-Game</title>
+</head>
+<body>
+  <script>
+    const questions = [
+    {
+      catagory: 'Multiple Choice Question',
+      question: 'What is Artificial intelligence?',
+      choices: [
+        'Subfield of computer science',
+        'Bilogical science',
+        'Natural science'
+      ],
+      answer: 'Sub field of computer science'
+    },
+    {
+      catagory: 'Multiple choice question',
+      question: 'What is dataset?',
+      choices: [
+        'Data related to an object',
+        'Data related to a population',
+        'Data related to a sample'
+      ],
+      answer: 'Data related to an object'
+    },
+    {
+      catagory: 'Multiple choice question',
+      question: 'What an array?',
+      choices: [
+        'That store multiple values',
+        'That store single value',
+        'That store only characters'
+      ],
+      answer: 'That store multiple values'
+    },
+    {
+      catagory: 'Multiple choice question',
+      question: 'What an array?',
+      choices: [
+        'That store multiple values',
+        'That store single value',
+        'That store only characters'
+      ],
+      answer: 'That store multiple values'
+    },
+    {
+      catagory: 'Multiple choice question',
+      question: 'An array in javaScript is ......?',
+      choices: [
+        'Static in nature',
+        'Dynamic in nature',
+        'Both a and b'
+      ],
+      answer: 'Dynamic in nature'
+    },
+    {
+      catagory: 'Multiple choice question',
+      question: 'What is a variable?',
+      choices: [
+        'That changes its value',
+        'That is constant', 
+        'Memory location'
+        ],
+      answer: 'That changes its value'
+    }
+  ];
+
+  function getRandomQuestion(questions){
+    let randomQuestion = Math.floor((Math.random() * 10) % 6);
+    return questions[randomQuestion];
+  }
+  function getRandomComputerChoice(random)
+  {
+     randomChoice = Math.floor((Math.random() * 10) % 3);
+     const choice = random.choices; 
+     return choice[randomChoice];
+  }
+  function getResult(obj, c){
+    if(c === obj.answer ){
+      console.log('Answer is true');
+      return true;
+    }
+    else 
+    {
+      console.log('Answer is false');
+      return false;
+    }
+  }
+
+  const random = getRandomQuestion(questions);
+  const randomQ = random.question;
+  const choice = getRandomComputerChoice(random);
+  
+
+  console.log(randomQ);
+  
+  console.log(getRandomComputerChoice(random));
+  
+  getResult(random, choice);
+  
+  //function getRandomComputerChoice(questions.choices)
+  </script>
+</body>
+</html>
