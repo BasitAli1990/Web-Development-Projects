@@ -1,0 +1,37 @@
+html{
+  font-size: 24px;
+  background-color: mintcream;
+  padding-top: 100px;
+  display: block;
+}
+.newspaper {
+  font-family: 'Open Sans', sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 1px rgb(0, 0, 0, 0.1);
+}
+h1{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+.date{
+  text-align: center;
+  font-size: 17px;
+}
+.sub-headline {
+  font-style: italic;
+  font-weight: lighter;
+}
+.author{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.text{
+  font-size: 0.7rem;
+}
+.text::first-letter{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
