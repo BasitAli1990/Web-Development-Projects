@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set of football team cards</title>
+  <link rel="stylesheet" href="football-team-cards.css">
+</head>
+<body>
+  <h1 class="title">Team stats</h1>
+  <main>
+    <div class="team-stats">
+      <p class="team-name"></p>
+      <p class="year"></p>
+      <p class="head-coach"></p>
+    </div>
+    <label for="players" class="options-label">Filter Teammates:</label>
+    <select name="players" id="players">
+      <option value="all">All Players</option>
+      <option value="forward">Position Forward</option>
+      <option value="midfielder">Position Midfielder</option>
+      <option value="defender">Position Defender</option>
+      <option value="goalkeeper">Position Goalkeeper</option>
+    </select>
+    <div class="cards" id="player-cards">
+    </div>
+  </main>
+  <footer>© freeCodeCamp</footer>
+  <script src="football-team-cards.js"></script>
+</body>
+</html>
