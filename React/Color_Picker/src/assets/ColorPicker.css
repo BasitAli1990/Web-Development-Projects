@@ -1,0 +1,19 @@
+.color-picker {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.color-picker-command {
+  color: #14183c;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.color-input {
+  position: absolute;
+  margin-top: 50px;
+  height: 40px;
+  color: red;
+}
