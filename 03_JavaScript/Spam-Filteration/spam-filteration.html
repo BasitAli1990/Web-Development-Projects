@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Regular Expression by Building a Spam Filter</title>
+  <link rel="stylesheet" href="spam-filteration.css">
+</head>
+<body>
+  <header class="main-text">
+    <hi class="title">Is this spam?</hi>
+    <p class="description">
+      Enter a phrase to check if it would be marked as spam or not.
+    </p>
+  </header>
+
+  <main>
+    <label for="message-input" class="message-label">Message: </label>
+    <textarea type="text" name="message" id="message-input" rows="10" cols="40" placeholder="Enter message here" value=""></textarea>
+    <button class="btn" id="check-message-btn" type="button">
+      Check message
+    </button>
+    <p id="result-message"></p>
+  </main>
+
+  <footer class="footer">&copy; freeCodeCamp</footer>
+  <script src="spam-filteration.js"></script>
+</body>
+</html>
