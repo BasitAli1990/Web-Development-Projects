@@ -1,0 +1,21 @@
+.item-list {
+  list-style: none;
+  width: 250px;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    width: 200px;
+}
+button {
+  border: none;
+  background-color: white;
+  margin-left: 10px;
+}
+.filled {
+  color: red;
+  font-size: 15px;
+}
