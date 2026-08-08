@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    
+</head>
+<body>
+    <script>
+      /*const product = {
+        name: 'Socks',
+        price: 1090
+      };
+      console.log(product);
+      console.log(product.name);
+      console.log(product.price);
+
+      product.name = 'cotton socks';
+      console.log(product);
+
+      product.newProperty = true; //Adding new property
+      console.log(product);
+
+      delete product.newProperty; //deleting a property.
+      console.log(product);
+      console.log(typeof product);
+
+      const product2 = {
+        name: 'shirt',
+        ['delivery-time']: '1 day', //[] these are optional.
+        'delivey-time': '1 day',
+        rating: {
+          stars: 4.5,
+          count: 87
+        },
+        fun: function function1(){ // object method
+          console.log('function inside an object');
+        }
+      };
+      console.log(product2);
+      console.log(product2.name);
+      console.log(product2['name']);
+      //console.log(product2.delivery-time);
+      console.log(product2['delivery-time']);
+
+      console.log(product2.rating.count);
+      product2.fun();
+
+      console.log(typeof console);
+      console.log(typeof console.log);
+
+      console.log(JSON.stringify(product2));
+
+      const jsonstring =JSON.stringify(product2);
+      console.log(JSON.parse(jsonstring));
+
+      //localStorage store values permenantly.*/
+      
+      console.log('hello'.length);
+      console.log('hello'.toLocaleUpperCase());
+      //autoboxing special object wrapped around the strings.
+
+      //objects are refrences.
+
+      const object1 = {
+        message: 'hello'
+      };
+      const object2 = object1;
+      //javascript copy by refrence
+      object1.message = 'Good job'; //const object inside value can be changed. 
+
+      console.log(object2);
+
+      const object3={
+        message: 'Good job',
+        price: 799
+      };
+
+      console.log(object3 === object1); //false b/c different refrences
+      console.log(object1 === object2); //true same refrences.
+
+      const object4={
+        message: 'Good job'
+      };
+      //const message = object4.message;
+      //const {message} = object4; //destructuring.
+      const {message, price} = object4; //destructuring.
+
+      console.log(message);
+      console.log(price);
+
+      const object5 = {
+        //message: message  //message variable at the top.
+        message,
+        /*method: function function1(){
+          console.log('method')
+        }*/
+       method(){
+        console.log('method'); //shorthand method.
+       }
+      };
+      console.log(object5);
+      object5.method();
+    </script>
+</body>
+</html>
