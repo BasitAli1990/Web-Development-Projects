@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mask-Email</title>
+</head>
+<body>
+  <script>
+
+    function maskEmail(email)
+    {
+      const [local, domain] = email.split("@");
+      console.log(local);
+
+      if(local.length <= 2) {
+        return local[0] + "*" + "@" + domain;
+      }
+
+      const maskedLocal = local[0] + "*".repeat(local.length - 2) + local[local.length - 1];
+      return maskedLocal + "@" + domain;
+    }
+
+    let email = prompt("Enter your Email");
+    console.log(maskEmail(email));
+  </script>
+</body>
+</html>
