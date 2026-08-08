@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Fortune Teller</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      width: 350px;
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .fortune {
+      margin-top: 20px;
+      font-style: italic;
+      font-size: 18px;
+      color: #ffd700;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Star Fortune Teller</h2>
+    <input type="text" id="name" placeholder="Enter your name" />
+    <input type="text" id="idCard" placeholder="Enter your ID card number" />
+    <input type="date" id="dob" placeholder="Enter your date of birth" />
+    <button onclick="getFortune()">Reveal My Fortune</button>
+    <div class="fortune" id="fortune"></div>
+  </div>
+
+  <script>
+    function getFortune() {
+      const name = document.getElementById("name").value.trim();
+      const idCard = document.getElementById("idCard").value.trim();
+      const dob = document.getElementById("dob").value;
+      const fortuneBox = document.getElementById("fortune");
+
+      if (!name || !idCard || !dob) {
+        fortuneBox.textContent = "Please fill all the fields to see your fortune.";
+        return;
+      }
+
+      const fortunes = [
+        "A new journey will bring unexpected joy.",
+        "You will make a valuable connection soon.",
+        "Your creative ideas will soon take flight.",
+        "Challenges are ahead, but you will overcome them gracefully.",
+        "Trust your intuition — it's guiding you right.",
+        "Something long-awaited will finally arrive.",
+        "Your kindness will return to you multiplied.",
+        "A surprise opportunity is on the horizon."
+      ];
+
+      const birthDate = new Date(dob);
+      const fortuneIndex = (birthDate.getDate() + birthDate.getMonth() + birthDate.getFullYear()) % fortunes.length;
+      const fortune = fortunes[fortuneIndex];
+
+      fortuneBox.textContent = `${name}, the stars say: "${fortune}"`;
+    }
+  </script>
+</body>
+</html>
