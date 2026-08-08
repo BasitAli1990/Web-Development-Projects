@@ -1,0 +1,48 @@
+main{
+  background-color: rgb(221, 218, 218);
+  padding: 50px;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-family: Roboto;
+  text-align: center;
+}
+h1{
+  font-size: 40px;
+}
+p.intro{
+  font-size: 17px;
+}
+.image{
+  background-color: white;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+}
+.image > img{
+  width: 100%;
+  height: auto;
+}
+h3{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.list{
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+ul{
+  list-style-position: outside;
+  padding-left: 0px;
+  text-align: left;
+  color: rgb(51, 50, 50);
+}
+
+li{
+  padding-left: 0px;
+  margin-bottom: 15px;
+}
+.copy{
+  text-align: justify;
+}
