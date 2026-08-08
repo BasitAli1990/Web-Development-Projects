@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+  display: block;
+}
+.header {
+  display: block;
+  margin-top: 100px;
+  text-align: center;
+  background-color: rgb(211, 221, 224);
+  height: 8vh;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+div {
+  unicode-bidi: isolate;
+}
+.gallery-item {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s;  
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 15px #000;
+}
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
