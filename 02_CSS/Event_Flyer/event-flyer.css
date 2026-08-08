@@ -1,0 +1,43 @@
+html{
+  background-color: gray;
+  font-size: 1.5rem;
+}
+body{
+  padding: 50px 10px;
+  margin: 0 auto;
+  width: 90vw;
+  min-height: calc(100vh - 100px);
+  background-color: white;
+  font-size: sans-serif;
+  text-align: center;
+}
+hr{
+  width: 70vw;
+  height: 2px;
+  background-color: black;
+}
+main{
+  width: 90%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 40px;
+  column-gap: 40px;
+  padding-bottom: 50px;
+  align-content: center;
+  margin-left: 50px;
+}
+section{
+  width: 1fr;
+  text-align: left;
+}
+h1{
+  text-align: center;
+  font-size: 1.2rem;
+}
+ul > li {
+  line-height: 1.2rem;
+}
+footer{
+  margin-top: 40px;
+}
