@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunch Picker Program</title>
+</head>
+<body>
+  <script>
+    const lunches = [];
+
+    function addLunchToEnd(arr, string){
+      arr.push(string);
+      console.log(`${string} added to the end of the lunch menu`);
+      return arr;
+    }
+
+    function addLunchToStart(arr, string){
+      arr.unshift(string);
+      
+      console.log(`${string} added to the start of the lunch menu`);
+      return arr;
+    }
+
+    // addLunchToEnd(lunches, "Chicken");
+    // addLunchToStart(lunches, "roti");
+
+    // console.log(lunches);
+
+    function removeLastLunch(arr){
+      if(arr.length > 0 ){
+        const removedItem = arr.pop();
+        console.log(`${removedItem} from the end of the lunch menu.`);
+        return arr;
+      }
+      else{
+        console.log("No lunches to remove");
+        return arr;
+      }
+    }
+
+    function removeFirstLunch(arr){
+        if(arr.length > 0 ){
+        const removedItem = arr.unshift();
+        console.log(`${removedItem} from the start of the lunch menu.`);
+        return arr;
+      }
+      else{
+        console.log("No lunches to remove");
+        return arr;
+      }
+    }
+    
+    function getRandomLunch(arr){
+      if(arr.length > 0){
+        console.log(`No Lunches available`);
+        return arr;
+      }
+      else 
+      {
+        const random = Math.floor((Math.random() * 10) % (arr.length));
+        console.log(`Randomly selected lunch: ${arr[random]}`)
+        return arr[random]; 
+      }
+    }
+
+    function showLunchMenu(){
+      if(arr.length === 0){
+        console.log(`The menu is empty`);
+      }
+      else{
+        console.log(`Menu item:${arr}`);
+      }
+    }
+
+    addLunchToEnd(lunches, "Tacos");
+    addLunchToEnd(lunches, "Pizza");
+    addLunchToEnd(lunches, "Burger");
+
+    addLunchToStart(lunches, "Sushi");
+
+    removeLastLunch(lunches);
+
+    getRandomLunch(lunches);
+
+    showLunchMenu(lunches);
+
+  </script>
+</body>
+</html>
